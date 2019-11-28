@@ -1,0 +1,17 @@
+header, footer {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Calistoga', cursive;
+  font-size: large;
+  font-weight: 100;
+}
+
+a:visited {
+  color: red;
+}
+a:hover {
+  font-weight: bold;
+}
+a:active {
+  text-decoration: none;
+}

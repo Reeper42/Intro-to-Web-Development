@@ -7,11 +7,18 @@
 <html lang="en">
     <head>
         <title>Contact Us</title>
+        <link href="CSS-styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+        <style>
+          #required {
+            font-weight: bold;
+          }
+        </style>
     </head>
 
     <body>
         <header>
-            <h1>Alli and Dan's</h1>
+            <h1>Alli & Dan's</h1>
         </header>
 
         <nav>
@@ -23,15 +30,18 @@
         </nav>
 
       <form action="submit.html" method="POST">
+
+        <div id="required">
         <label for="Name">Name:</label>
-          <input type="text" id="Name" name="Name"><br/>
+          <input type="text" id="Name" name="Name" required/><br/>
           <br/>
         <label for="email">Email:</label>
-          <input type="text" id="email" name="email"><br/>
+          <input type="text" id="email" name="email" required/><br/>
           <br/>
         <label for="Phone">Phone:</label>
-          <input type="text" id="Phone" name="Phone"><br/>
+          <input type="text" id="Phone" name="Phone" required/><br/>
           <br/>
+        </div>
 
         <label for="Reason for Inquiry">Reason for Inquiry:</label>
           <select id="Reason for Inquiry" name="Reason for Inquiry">
@@ -46,10 +56,10 @@
           <textarea id="info" name="info"></textarea>
           <br/>
 
-        <label for "Have you been?">Have you been to the restaurant?</label>
+        <label for="Have you been?">Have you been to the restaurant?</label>
           <input type="radio" id="No" name="Answer" value="No" checked/>
             <label for="No">No</label>
-          <input type="radio" id="Yes" name="Answer" value="Yes">
+          <input type="radio" id="Yes" name="Answer" value="Yes"/>
             <label for="Yes">Yes</label>
             <br/>
 
