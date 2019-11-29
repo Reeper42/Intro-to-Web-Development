@@ -7,11 +7,20 @@ header, footer {
 }
 
 a:visited {
-  color: red;
+  color: white;
 }
 a:hover {
   font-weight: bold;
 }
 a:active {
   text-decoration: none;
+}
+nav {
+  border-top: thin #143642 solid;
+  border-bottom: thin #143642 solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+nav .btn {
+  background-color: #143642;
 }
