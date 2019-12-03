@@ -5,7 +5,10 @@ header, footer {
   font-size: large;
   font-weight: 100;
 }
-
+body {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 a:visited {
   color: white;
 }
@@ -15,12 +18,16 @@ a:hover {
 a:active {
   text-decoration: none;
 }
-nav {
+nav a {
   border-top: thin #143642 solid;
   border-bottom: thin #143642 solid;
   padding-top: 12px;
   padding-bottom: 12px;
-}
-nav .btn {
+  display: block;
+  margin: 20px 20px;
+  float: left;
   background-color: #143642;
+}
+.clear-float {
+  clear: both;
 }
